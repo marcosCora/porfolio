@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     background-color: #EBE3D5; 
     font-weight: bold;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center; 
     height: 14vh;
@@ -47,6 +49,7 @@ body {
     color: #776B5D; 
     font-size: 25px;
     text-decoration: none;
+    transition: .5s;
 }
 
 .header .nav-links li:hover {
@@ -68,7 +71,7 @@ body {
 
 
 section{
-    border: 5px solid #000000;
+    border: 5px solid #b11f1f;
     width: 100%;
     height: 100vh;
 } 
@@ -76,12 +79,14 @@ section{
 .section-profile{
     display: flex;
     justify-content: center;
-    height: 86vh;
     flex-wrap: wrap;
+    height: 86vh;
 }
 
 .section-profile .div-img{
     margin: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
 
 }
 .section-profile .div-inf{
@@ -90,6 +95,8 @@ section{
     flex-direction: column;
     align-items: center;
     font-size: 30px;
+    flex-grow: 0;
+    flex-shrink: 1;
 
 }
 
@@ -118,6 +125,7 @@ section{
     border-radius: 5px;
     cursor: pointer;
   }
+
   .button-cv:hover {
     background-color: #45a049;
   }
@@ -131,36 +139,36 @@ section{
     align-items: center;
 }
 
+.section-skills .title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 .section-skills .container-skills{
-    margin-top: 5%;
-    width: 120vh;
-    height: 80vh;
+    margin-top: 2%;
+    width: 180vh;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
-    border: 5px solid #000000;
 }
 
 
-.section-skills div{
-    display: flex;
-    justify-content: center;
-    /* font-size: 30px; */
-    width: 45%;
-    height: 70%;
-}
-.section-skills div p{
-    font-size: 30px;
-    width: 30%;
-    height: 10%;
-}
-
-
-.section-skills .frontSkills{
-    border: 5px solid #000000;
-
+.section-skills .container-skills .details-container{
+    padding: 1.5rem;
+    margin: 1rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    background-color: #FFE3BB;
 }
 
-.section-skills .backSkills{
-    border: 5px solid #000000;
-    
-} 
+
+.title-skills{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
