@@ -71,9 +71,9 @@ body {
 
 
 section{
-    /* border: 5px solid #b11f1f; */
+   border: 5px solid #545454;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
 } 
 
 .section-profile{
@@ -110,8 +110,6 @@ section{
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    
-    
 }
 
 .button-cv {
@@ -139,15 +137,14 @@ section{
     align-items: center;
 }
 
-.section-skills .title{
+ .title{
     font-size: 3rem;
+    padding: 3%;
     font-weight: bold;
 }
 
 .section-skills .container-skills{
-    margin-top: 2%;
-    width: 90%;
-    height: 90%;
+    /* margin-top: 2%; */
     display: flex;
     justify-content: space-around;
 }
@@ -163,17 +160,29 @@ section{
     border-color: rgb(163, 163, 163);
     text-align: center;
     background-color: #FFE3BB;
-    height: 90%;
+    height: 88%;
+    width: 90%;
 }
 
-.section-skills .container-skills .details-container article{
-    font-size: 25px;
+.section-skills .container-skills .details-container .body-infSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.section-skills .container-skills .details-container .body-infSkills article{
+    flex: 0 0 48%; /* Ajusta según sea necesario para que haya dos por fila */
+    display: flex;
+    align-items: center;
+    font-size: 3vh;
     margin: 5%;
 }
 
 .icon{
-    width: 8%;
-    height: 8%;
+    width: 3vh;
+    height: 3vh;
+    margin-right: 9%;
 }
 
 .title-skills{
@@ -181,4 +190,53 @@ section{
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+}
+
+.section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.section-projects .container-projects{
+    border: 5px solid #545454;
+    display: flex;
+     flex-flow: row wrap; 
+    justify-content: space-around;
+    width: 90%;
+    height: 85%;
+}
+
+.section-projects .container-projects .article-proyects{
+    border: 5px solid #a7cb54;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 49%;
+    height: 49%;
+}
+
+.section-projects .container-projects .article-proyects .container-imgProjects {
+/*     display: flex;
+    border: 5px solid #a7cb54;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 49%; */
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.section-projects .container-projects .article-proyects .container-imgProjects .img-projects{
+    /* width: 100%;
+    height: 27vh;
+    max-width: 100%; /* Ajusta según sea necesario 
+    max-height: 100%; /* Ajusta según sea necesario */
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
 }
